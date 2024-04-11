@@ -25,7 +25,7 @@ class OptionsState extends MenuTemplate
 {
 	static var optionSub:Array<Array<String>> = [
 		['basic', 'gameplay', 'visuals', 'controls', 'changelog'],
-		['start_fullscreen', 'start_volume', 'skip_logo', 'default_persist', #if desktop 'launch_sprites' #end ],
+		['language', 'start_fullscreen', 'start_volume', 'skip_logo', 'default_persist', #if desktop 'launch_sprites' #end ],
 		['audio_offset', 'input_offset', 'downscroll', 'ghost_tapping', 'botplay'],
 		['antialiasing', #if desktop 'framerate', #end 'show_hud', 'useful_info']
 	];
@@ -39,6 +39,7 @@ class OptionsState extends MenuTemplate
 			'View the history of Assorion Engine'
 		],
 		[
+			'Change the game\'s language',
 			'Start the game in fullscreen mode',
 			'Change the game\'s starting volume',
 			'Skip the HaxeFlixel splash screen',

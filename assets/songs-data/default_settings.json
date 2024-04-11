@@ -1,5 +1,7 @@
 {
 
+    "language":         "en",
+    
     "start_fullscreen": false,
     "start_volume":     100,
     "skip_logo":        false,

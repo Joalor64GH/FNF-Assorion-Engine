@@ -10,6 +10,8 @@ import flixel.util.FlxSave;
 using StringTools;
 
 typedef Options = {
+    var language:String;
+    
     var start_fullscreen:Bool;
     var start_volume:Int;
     var skip_logo:Bool;
