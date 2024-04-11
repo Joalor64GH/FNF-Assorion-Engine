@@ -18,6 +18,8 @@ import flixel.FlxObject;
 	3. Add the description for your option
 	4. If the option is an integer, add it to altChange function
 	5. If the option is togglable then add it to the keyHit function
+
+	TO-DO: Add a string option thingy
 */
 
 #if !debug @:noDebug #end

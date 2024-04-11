@@ -59,7 +59,7 @@ class Localization
     private static function loadLanguageData(language:String):Dynamic
     {
         var jsonContent:String;
-        var path:String = Paths.file("languages/" + language + ".json"); // You can edit this if you need to
+        var path:String = "assets/locales/" + language + ".json";
 
         // Attempt to load the requested file
         if (FileSystem.exists(path)) {
@@ -69,7 +69,7 @@ class Localization
         } else {
             // If the requested file is not found, uses the default language as a fallback
             trace("oops! file not found for: " + language + "!");
-            jsonContent = File.getContent(Paths.file("languages/" + DEFAULT_LANGUAGE + ".json"));
+            jsonContent = File.getContent("assets/locales/" + DEFAULT_LANGUAGE + ".json");
             currentLanguage = DEFAULT_LANGUAGE;
         }
 
@@ -127,6 +127,6 @@ class Localization
             }
         }
 
-        return Reflect.field(languageData, key); // Returns the string
+        return Reflect.field(languageData, key) ?? 'missing key: $key'; // Returns the string
     }
 }
